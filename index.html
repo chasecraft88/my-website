@@ -3,37 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Site Title</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Whispers From Within</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Your Site</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to the home section.</p>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>Learn more about us here.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch with us.</p>
-        </section>
-    </main>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#book">The Book</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Whispers From Within</h1>
+        <p>Where thoughts echo and stories find their voice</p>
+        <a href="#book" class="cta-button">Explore the Book</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About the Author</h2>
+        <p>Discover the inspiration behind the journey and the process of creating <i>The Echo of Silence: Whispers of the Unseen</i>.</p>
+    </section>
+
+    <!-- Book Section -->
+    <section id="book">
+        <h2>The Book</h2>
+        <p><strong>The Echo of Silence: Whispers of the Unseen</strong></p>
+        <p>Explore the themes of introspection, personal growth, and the unspoken words that shape our inner world.</p>
+        <a href="https://www.amazon.com/your-book-link" class="cta-button">Buy Now on Amazon</a>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Read thoughts, reflections, and insights inspired by <i>Whispers From Within</i>.</p>
+        <!-- Add links to blog posts -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Have thoughts or reflections to share? Reach out to me!</p>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Site Name</p>
+        <p>© 2024 Whispers From Within. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/your-channel">YouTube</a>
+            <a href="https://twitter.com/your-twitter">Twitter</a>
+        </div>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>
